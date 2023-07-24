@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600;700;800&family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- fontawsome -->
+    <script src="https://kit.fontawesome.com/307f30205f.js" crossorigin="anonymous"></script>
+    <!-- tailwind link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .manrope{
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        dark: '#1C1C1C',
+                        text: '#777777',
+                        color1: '#F00F00',
+                        color2: '#FF8938'
+                    }
+                }
+            }
+        }
+    </script>
+    
+
     <title>Tea house</title>
 </head>
-<body>
-    
+
+<body class="manrope">
+    <header class="max-w-screen-xl mx-auto my-10 flex justify-center items-center flex-col lg:flex-row gap-12">
+        <div class="flex flex-col justify-center items-center lg:items-start gap-8 flex-1 pt-5">
+            <h1 class="text-5xl lg:text-7xl text-dark font-extrabold text-center lg:text-left">It's good <br>
+                tea time at The <br>Tea House</h1>
+                <p class="text-lg font-medium text-text text-center lg:text-left">Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To Your Taste Buds.</p>
+                <button class="py-6 px-8 flex items-center justify-center rounded-lg text-white bg-gradient-to-r from-color1 to-color2">Explore Now
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                        <path d="M4.5 19.7788L19.5 4.77881M19.5 4.77881H8.25M19.5 4.77881V16.0288" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </button>
+        </div>
+        <div  class="relative">
+            <div class="flex-1">
+                <img class="w-full lg:w-[550px]" src="./images/banner.png" alt="">
+            </div>
+            <div class="left-14 bottom-4 flex justify-center items-center bg-white rounded-lg shadow-xl w-64 h-28 absolute gap-2">
+               <img src="./images/Group 5.svg" alt="">
+               <div class="flex flex-col">
+                <h1 class="text-xl text-dark font-bold">5.00</h1>
+                <span class="text-base text-text">Trust Pilot Ratings</span>
+               </div>
+                
+            </div>
+        </div>
+        
+
+    </header>
+
 </body>
+
 </html>
